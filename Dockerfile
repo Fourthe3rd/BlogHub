@@ -3,7 +3,7 @@
 # use python 3.7 as base image
 
 # Update the base image to python 3.8
-FROM python:3.8
+FROM python:3.7
 
 # set working directory
 WORKDIR /app
@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Provide the command to start the flask app
-CMD [ "python", "run.py" ]
+CMD [ "python", "wsgi.py" ]
 
 # Fixed ERROR: Ignored the following versions that different
 # Fixed ERROR: Could not find version that satisfies the requirement dnspython==2.4.1
