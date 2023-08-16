@@ -3,7 +3,7 @@
 # use python 3.7 as base image
 
 # Update the base image to python 3.8
-FROM python:3.7
+FROM python:3.8
 
 # set working directory
 WORKDIR /app
