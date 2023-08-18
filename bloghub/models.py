@@ -16,7 +16,7 @@ def load_user(user_id):
 class User(db.Document, UserMixin):
     username = db.StringField(max_length=20, unique=True, required=True)
     email = db.StringField(max_length=120, unique=True, required=True)
-    image_file = db.StringField(max_length=20, required=True, default='default.jpg')
+    image_file = db.StringField(default='default.jpg')
     password = db.StringField(max_length=60, required=True)
     posts = db.ListField(db.ReferenceField('Post'))
 
@@ -47,3 +47,4 @@ class Post(db.Document):
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
+    
