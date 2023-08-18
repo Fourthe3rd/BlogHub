@@ -80,14 +80,7 @@ body {
     font-size: 2.5rem;
   }
 
-  .article-content {
-    max-height: 100px;
-    overflow: hidden;
-  }
-  
-  .article-content.expanded {
-    max-height: none;
-  }
+
 
   .read-more-btn {
     display: inline-block;
@@ -104,4 +97,13 @@ body {
   }
   .read-more-btn:hover {
   background-color: #0056b3; /* Darker blue color */
+}
+
+.article-content {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.article-content.expanded {
+  max-height: none;
 }
