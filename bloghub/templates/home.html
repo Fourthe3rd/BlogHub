@@ -10,6 +10,8 @@
             </div>
             <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
+            <button class="read-more-btn">Read More</button>
+            <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
           </div>
         </article>
     {% endfor %}

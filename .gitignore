@@ -17,6 +17,8 @@ build/
 .idea/
 docs/_build/
 .vscode
+poetry.lock
+pyproject.toml
 
 # Coverage reports
 htmlcov/
